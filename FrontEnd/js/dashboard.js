@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         // Fetch user details
-        const userResponse = await fetch('http://localhost:5000/api/auth/dashboard', {
+        const userResponse = await fetch('https://talelacademybackend.onrender.com/api/auth/dashboard', {
             method: 'GET',
             headers: { Authorization: `Bearer ${token}` },
         });
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const grade = document.getElementById('grade').value;
 
         try {
-            const response = await fetch('http://localhost:5000/api/course/add', {
+            const response = await fetch('https://talelacademybackend.onrender.com/api/course/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const courseCode = document.getElementById('course-code').value;
 
         try {
-            const response = await fetch('http://localhost:5000/api/course/join', {
+            const response = await fetch('https://talelacademybackend.onrender.com/api/course/join', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Fetch and Display Joined Courses
     async function fetchJoinedCourses() {
         try {
-            const response = await fetch('http://localhost:5000/api/course/my-courses', {
+            const response = await fetch('https://talelacademybackend.onrender.com/api/course/my-courses', {
                 method: 'GET',
                 headers: { Authorization: `Bearer ${token}` },
             });
