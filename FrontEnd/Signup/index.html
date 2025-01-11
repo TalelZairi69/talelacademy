@@ -200,11 +200,11 @@
             </div>
             
             <div class="account-type" data-role="teacher">
-                <img src="/img/img/teacherico.png" alt="Teacher">
+                <img src="/img/teacherico.png" alt="Teacher">
                 <p>أستاذ</p>
             </div>
             <div class="account-type" data-role="parent">
-                <img src="/img/img/parentico.png" alt="Parent">
+                <img src="/img/parentico.png" alt="Parent">
                 <p>ولي</p>
             </div>
         </div>
@@ -216,11 +216,11 @@
                     <label class="form-label"></label>
                     <div class="gender-selection d-flex justify-content-around">
                         <div class="gender-option" data-gender="Male">
-                            <img src="/img/img/manlogo.svg" alt="Male Icon" class="gender-icon">
+                            <img src="/img/manlogo.svg" alt="Male Icon" class="gender-icon">
                             <p>.Mr </p>
                         </div>
                         <div class="gender-option" data-gender="Female">
-                            <img src="/img/img/womanlogo.svg" alt="Female Icon" class="gender-icon">
+                            <img src="/img/womanlogo.svg" alt="Female Icon" class="gender-icon">
                             <p>.Mrs </p>
                         </div>
                     </div>
@@ -324,7 +324,7 @@
             const data = await response.json();
 
             // Automatically log the user in
-            const loginResponse = await fetch('https://talelacademybackend.onrender.com//api/auth/login', {
+            const loginResponse = await fetch('https://talelacademybackend.onrender.com/api/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
