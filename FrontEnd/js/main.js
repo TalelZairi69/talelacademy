@@ -110,4 +110,30 @@
 
 
 
+function logout() {
+    // Clear the token from localStorage
+    localStorage.removeItem('token');
 
+    // Optionally, send a logout request to the server (if needed)
+    fetch('http://localhost:5000/api/auth/logout', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // Include the token if required by the server
+            Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+    })
+    .then(response => {
+        if (response.ok) {
+            // Redirect to the login page after logout
+            window.location.href = '/login';
+        } else {
+            console.error('Failed to log out');
+            window.location.href = '/login'; // Redirect even if server fails
+        }
+    })
+    .catch(error => {
+        console.error('Error logging out:', error);
+        window.location.href = '/login'; // Redirect on error
+    });
+}

@@ -8,7 +8,7 @@
 /* Global cursor for the entire page */
 /* Apply the same cursor globally */
 * {
-    cursor: url('/E-Learning-Website-HTML-CSS/FrontEnd/img/navigate.png'), auto;
+    cursor: url('/FrontEnd/img/navigate.png'), auto;
 }
 
 .btn {
@@ -30,7 +30,52 @@
 .btn:hover a {
     color: var(--primary) !important;
 }
+/* Style for the custom buttons container */
+.custom-buttons-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-left: auto; /* Push to the left side */
+    align-items: center;
+}
 
+/* Style for the "سجل مجانا" button */
+.custom-signup-btn {
+    background-color: #fb873f; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+.custom-signup-btn:hover {
+    background-color: #f2f2f2; /* Slightly darker blue */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+/* Style for the "تسجيل الدخول" button */
+.custom-login-btn {
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 25px; /* Fully rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+.custom-login-btn:hover {
+    background-color: #f2f2f2; /* Light gray hover effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+y
 .btn-light {
     background-color: var(--light);
 }
@@ -261,35 +306,10 @@
     }
 }
 
-.header-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    right: 8%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-}
 
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
-    margin: 7px 0;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background: transparent;
-    border: 1px solid #FFFFFF;
-    font-size: 22px;
-    transition: .5s;
-}
 
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-}
+
+
 
 .page-header {
     background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
