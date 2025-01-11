@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const token = localStorage.getItem('token');
     fetchStudyGroups(); // Call on page load
     try {
-        const userResponse = await fetch('http://localhost:5000/api/auth/dashboard', {
+        const userResponse = await fetch('https://talelacademybackend.onrender.com/api/auth/dashboard', {
             method: 'GET',
             headers: { Authorization: `Bearer ${token}` },
         });
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Submit payload to the backend
     try {
-        const response = await fetch('http://localhost:5000/api/course/add', {
+        const response = await fetch('https://talelacademybackend.onrender.com/api/course/add', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const courseCode = document.getElementById('course-code').value;
     
         try {
-            const response = await fetch('http://localhost:5000/api/course/join', {
+            const response = await fetch('https://talelacademybackend.onrender.com/api/course/join', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Fetch and Display Joined Courses
     async function fetchJoinedCourses() {
         try {
-            const response = await fetch('http://localhost:5000/api/course/my-courses', {
+            const response = await fetch('https://talelacademybackend.onrender.com/api/course/my-courses', {
                 method: 'GET',
                 headers: { Authorization: `Bearer ${token}` },
             });
@@ -250,7 +250,7 @@ function logout() {
     const redirectUrl = rootUrl + signinPath;
 
     // Optionally, send a logout request to the server (if needed)
-    fetch('http://localhost:5000/api/auth/logout', {
+    fetch('https://talelacademybackend.onrender.com/api/auth/logout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -319,7 +319,7 @@ async function fetchStudyGroups() {
     };
 
     try {
-        const response = await fetch('http://localhost:5000/api/course/my-study-groups', {
+        const response = await fetch('https://talelacademybackend.onrender.com/api/course/my-study-groups', {
             method: 'GET',
             headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
