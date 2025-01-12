@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         } else {
             showNotification('Failed to fetch user details.');
-            window.location.href = '../../login/';
+            window.location.href = '/Login/';
         }
     } catch (error) {
         showNotification('An error occurred. Please try again.');
         console.error(error);
-        window.location.href = '../../login/';
+        window.location.href = '/Login/';
     }
 
 
