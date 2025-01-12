@@ -315,6 +315,7 @@ async function fetchStudyGroups() {
         Physique: 'https://media.istockphoto.com/id/874157664/fr/photo/bureau-de-la-salle-de-classe-et-tableau-tir%C3%A9-de-vue-g%C3%A9n%C3%A9rale-de-lenseignement-de-la-chimie.jpg?s=612x612&w=0&k=20&c=vY-JQAdqXbpDZU2BgvDYnNCoPA4ECOlxqGYGdqnIzg4=',
         Sciences_Naturelles: 'https://i.pinimg.com/736x/c4/ed/23/c4ed2397c0f68076e613cead6a737f16.jpg',
         Anglais: 'https://www.shutterstock.com/shutterstock/photos/2194586205/display_1500/stock-vector-english-language-learning-concept-vector-illustration-doodle-of-foreign-language-education-course-2194586205.jpg',
+        default: 'https://png.pngtree.com/thumb_back/fh260/background/20200530/pngtree-cute-hand-drawn-style-mathematics-education-pink-plaid-background-image_337364.jpg',
     };
 
     try {
@@ -340,6 +341,9 @@ async function fetchStudyGroups() {
 
                     const images = {
                         Mathématiques: 'https://png.pngtree.com/thumb_back/fh260/background/20200530/pngtree-cute-hand-drawn-style-mathematics-education-pink-plaid-background-image_337364.jpg',
+                        Physique: 'https://media.istockphoto.com/id/874157664/fr/photo/bureau-de-la-salle-de-classe-et-tableau-tir%C3%A9-de-vue-g%C3%A9n%C3%A9rale-de-lenseignement-de-la-chimie.jpg?s=612x612&w=0&k=20&c=vY-JQAdqXbpDZU2BgvDYnNCoPA4ECOlxqGYGdqnIzg4=',
+                        Sciences_Naturelles: 'https://i.pinimg.com/736x/c4/ed/23/c4ed2397c0f68076e613cead6a737f16.jpg',
+                        Anglais: 'https://www.shutterstock.com/shutterstock/photos/2194586205/display_1500/stock-vector-english-language-learning-concept-vector-illustration-doodle-of-foreign-language-education-course-2194586205.jpg',
                         default: 'https://png.pngtree.com/thumb_back/fh260/background/20200530/pngtree-cute-hand-drawn-style-mathematics-education-pink-plaid-background-image_337364.jpg',
                     };
 
