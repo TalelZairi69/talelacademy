@@ -33,7 +33,7 @@
             <a href="/dashboard/resources"><i class="bi bi-folder-fill"></i> Resources</a>
             <a href="/dashboard/announcements"><i class="bi bi-megaphone-fill"></i> Announcements</a>
             <a href="/dashboard/settings"><i class="bi bi-gear-fill"></i> Settings</a>
-            <a href="#" onclick="logout()"><i class="bi bi-box-arrow-right"></i> Logout</a>
+            <a href="#" onclick="logout()"><i class="bi bi-box-arrow-right"></i> </a>
 
         </div>
         
@@ -46,7 +46,7 @@
             </div>
 
             <div class="card fade-in" id="add-course-section" style="animation-delay: 0.6s;">
-                <button id="show-add-course" class="btn">Ajouter une classe ou un groupe d'étude privé</button>
+                <button id="show-add-course" class="btn">Ajouter un cours</button>
                 <form id="add-course-form" style="display: none; margin-top: 20px;">
                     <h4>Ajouter un Nouveau Cours</h4>
             
@@ -55,8 +55,8 @@
                         <label for="course-type">Type de Cours</label>
                         <select class="form-control" id="course-type" name="course-type" required>
                             <option value="" selected hidden>Choisir le type de cours</option>
-                            <option value="classe_de_lycee">Classe de Lycée</option>
-                            <option value="groupe_d_etude">Groupe d'Étude</option>
+                            <option value="classe_de_lycee">Cours Académique</option>
+                            <option value="groupe_d_etude">Cours Particuliers</option>
                         </select>
                     </div>
             
@@ -168,7 +168,7 @@
 
             <div class="card fade-in" id="join-course-section" style="animation-delay: 0.8s;">
 
-                <h4>Rejoindre une classe ou un groupe d'etude</h4>
+                <h4>Rejoindre un cours</h4>
                 <form id="join-course-form">
                     <div class="mb-3">
                         <label for="course-code">Code du Cours</label>
@@ -180,12 +180,12 @@
 
             <div class="card fade-in" style="animation-delay: 1s;">
 
-                <h4>Mes Classes</h4>
+                <h4>Mes Cours Académique</h4>
                 <div id="joined-courses-container" class="joined-courses-container">
             </div>
         </div>
         <div class="card fade-in" style="animation-delay: 1.2s; margin-top: 20px;">
-    <h4>Mes groupes d'étude</h4>
+    <h4>Mes Cours Particuliers</h4>
     <div id="study-groups-container" class="joined-courses-container"></div>
 </div>
 
