@@ -333,7 +333,7 @@
             if (loginResponse.ok) {
                 const loginData = await loginResponse.json();
                 localStorage.setItem('token', loginData.token);
-                window.location.href = '/Dashboard/';
+                window.location.href = '/dashboard/';
             }
         } else {
             const error = await response.json();

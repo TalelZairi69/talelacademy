@@ -181,7 +181,7 @@
                 if (response.ok) {
                     const data = await response.json();
                     localStorage.setItem('token', data.token);
-                    window.location.href = '/Dashboard/';
+                    window.location.href = '/dashboard/';
                 } else {
                     alert('البريد الإلكتروني أو كلمة المرور غير صحيحة. حاول مرة أخرى.');
                 }
