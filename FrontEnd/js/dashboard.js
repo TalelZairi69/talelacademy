@@ -245,7 +245,7 @@ function logout() {
 
     // Dynamically calculate the root URL and redirect to the signin page
     const rootUrl = window.location.origin; // Gets "http://127.0.0.1:5500"
-    const signinPath = "/FrontEnd/login";
+    const signinPath = "/Login";
     
     const redirectUrl = rootUrl + signinPath;
 
